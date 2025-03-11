@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(217, 222, 211); 
+}
+
+/* Container Styling */
+.ani_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Cake Animation Styling */
+.cake {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: cakeBounce 1s ease-in-out forwards;
+}
+
+.cake-layer {
+    width: 100%;
+    height: 30px;
+    background-color: #ffcccb;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.cake-layer:nth-child(1) {
+    background-color: #ffcccb; /* Bottom layer color */
+    height: 30px;
+}
+
+.cake-layer:nth-child(2) {
+    bottom: 30px;
+    background-color: #ff9999; /* Middle layer color */
+    height: 30px;
+}
+
+.cake-layer:nth-child(3) {
+    bottom: 60px;
+    background-color: #ff6699; /* Top layer color */
+}
+
+/* Keyframes for Cake Bounce Animation */
+@keyframes cakeBounce {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Centered Success Message */
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 700;
+    color: #4CAF50;
+    text-align: center;
+    padding: 40px 50px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initial opacity */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    z-index: 10;
+    width: 300px;
+}
+
+.message.show {
+    display: block; /* Ensure it's displayed */
+    opacity: 1; /* Change opacity for fade-in */
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Emoji styling */
+.emoji {
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+/* Animation for the Emoji */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 480px) {
+    .message {
+        width: 80%;
+        padding: 30px 20px;
+    }
+}

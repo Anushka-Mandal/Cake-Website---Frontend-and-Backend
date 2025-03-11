@@ -1,0 +1,92 @@
+/* FillDetail.css */
+
+/* Container for the form */
+.fill-detail-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Title for the form */
+.fill-detail-form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form elements */
+.fill-detail-form input,
+.fill-detail-form textarea,
+.fill-detail-form select,
+.fill-detail-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Input focus style */
+.fill-detail-form input:focus,
+.fill-detail-form textarea:focus,
+.fill-detail-form select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Textarea specific styles */
+.fill-detail-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button styles */
+.fill-detail-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.fill-detail-form button:hover {
+    background-color: #45a049;
+}
+
+/* Label styles */
+.fill-detail-form input::placeholder,
+.fill-detail-form textarea::placeholder {
+    color: #888;
+}
+
+/* Select box styles */
+.fill-detail-form select {
+    background-color: #000000;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    .fill-detail-form {
+        padding: 15px;
+    }
+
+    .fill-detail-form h2 {
+        font-size: 20px;
+    }
+
+    .fill-detail-form input,
+    .fill-detail-form textarea,
+    .fill-detail-form select,
+    .fill-detail-form button {
+        font-size: 14px;
+    }
+}

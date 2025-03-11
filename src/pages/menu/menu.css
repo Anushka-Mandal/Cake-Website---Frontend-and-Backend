@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(217, 222, 211);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+span, h1 {
+    font-weight: 800;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(280px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    justify-content: center;
+}
+.products .items {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.products .items:hover {
+    transform: scale(1.05);
+}
+.products .items img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    height: 250px;
+}
+.products .items h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(45, 45, 45);
+    margin-bottom: 15px;
+}
+.products .items .price {
+    font-size: 18px;
+    font-weight: 600;
+    color:  rgb(93, 103, 85);
+    margin-bottom: 20px;
+}
+.products .items button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+.products .items button:hover {
+    background-color: rgb(70, 80, 65);
+}
+@media (max-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 576px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000;
+    animation: fadeInOut 2s;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    10%, 90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  

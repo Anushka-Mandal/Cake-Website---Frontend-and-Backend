@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Cake of the Month Section */
+.cake-of-the-month {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(217, 222, 211); /* Soft background */
+    color: rgb(93, 103, 85); /* Complementary text color */
+    font-family: 'Roboto', sans-serif;
+    border-radius: 12px; /* Rounded corners for a polished look */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px;
+    gap: 20px; /* Uniform spacing */
+}
+
+/* Title */
+.title {
+    font-size: 3.5rem; /* Large and attention-grabbing */
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 400;
+    color: rgb(93, 103, 85); /* Same as container text */
+    margin-bottom: 20px;
+}
+
+/* Cake Image */
+.image {
+    width: 50%; /* Scaled for responsiveness */
+    max-width: 500px; /* Prevents oversized images */
+    height: auto;
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced depth */
+    transition: transform 0.3s ease; /* Smooth hover scaling */
+    margin-bottom: 20px;
+}
+
+.cake-image:hover {
+    transform: scale(1.02); /* Subtle zoom effect */
+}
+
+/* Cake Info */
+.description {
+    font-size: 21px;
+    font-family: 'Georgia', serif;
+    color: rgb(46, 52, 42);
+    margin: 20px 0;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* Order Button */
+.button{
+    background-color: rgb(93, 103, 85); /* Matches the container text color */
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 12px 60px; /* Comfortable padding */
+    border: none;
+    border-radius: 8px; /* Rounded for modern look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: rgb(75, 84, 69); /* Slightly darker hover state */
+    transform: scale(1.1); /* Noticeable scaling effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Added depth on hover */
+}

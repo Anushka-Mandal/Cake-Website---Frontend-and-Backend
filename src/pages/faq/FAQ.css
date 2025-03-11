@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400&family=Updock&family=Roboto:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(217, 222, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.faq-section {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    margin:auto;
+}
+
+.faq-title {
+    font-size: 64px;
+    font-family: "Amatic SC", sans-serif;
+    color: rgb(93, 103, 85);
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(93, 103, 85);
+    padding-bottom: 10px;
+}
+
+.faq-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the container */
+    margin: 0 auto;
+    text-align: center; /* Center-align items within the container */
+}
+
+.faq-item {
+    width: 100%;
+    max-width: 700px; /* Center within a narrower width */
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 15px 20px;
+    font-size: 28px;
+    font-family: "Updock", cursive;
+    color: rgb(93, 103, 85);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.faq-question:hover {
+    background-color: rgb(193, 204, 193);
+}
+
+.faq-answer {
+    padding: 15px 20px;
+    background-color: rgb(93, 103, 85);
+    color: rgb(217, 222, 211);
+    font-size: 21px;
+    font-family: "Georgia", serif; /* Updated font style */
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+}
+
+.plus-button {
+    font-size: 24px;
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+.faq-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.faq-button button {
+    background-color: rgb(93, 103, 85);
+    font-family: "Amatic SC", sans-serif;
+    font-size: 30px;
+    padding: 10px 60px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.faq-button button:hover {
+    background-color: rgb(75, 84, 69);
+    transform: scale(1.05);
+}

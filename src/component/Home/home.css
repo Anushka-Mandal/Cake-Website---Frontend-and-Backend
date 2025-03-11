@@ -1,0 +1,74 @@
+.homer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.circle {
+    background: linear-gradient(to bottom left, rgb(93, 103, 85) 0%, rgb(23, 26, 21) 100%);
+    height: 670px;
+    width: 670px;
+    border-radius: 670px 670px 670px 670px;
+    display: flex;
+    margin: 30px;
+    /* margin-bottom: 62px; */
+}
+
+.circle img {
+    text-align: center;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+    border-radius: 600px;
+    margin-top: 33px;
+}
+
+.writing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin-left: 55px;
+}
+
+.writing h1 {
+    font-size: 64px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    color: rgb(93, 103, 85);
+}
+
+.writing span {
+    color: mintcream;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 5);
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+}
+
+.writing p {
+    font-size: 21px;
+    font-family: "Updock", cursive;
+    text-align: center;
+    color:  rgb(46, 52, 42);
+    margin-bottom: 10px;
+}
+
+.writing button {
+    background-color: rgb(93, 103, 85);
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 30px;
+    padding: 10px 50px; /* Increased padding for a larger button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.writing button:hover {
+    background-color: rgb(70, 80, 65);
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}

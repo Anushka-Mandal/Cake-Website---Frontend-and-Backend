@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Optional, helps with layout */
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: rgb(217, 222, 211);
+  margin: 0; /* Ensure there's no margin */
+  padding: 0; /* Ensure there's no padding */
+}
+
+/* body, #root, footer {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+} */
