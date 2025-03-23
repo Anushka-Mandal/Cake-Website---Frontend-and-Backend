@@ -6,7 +6,6 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
 # React with Vite Installation Guide
 
 ## Prerequisites
@@ -50,6 +49,12 @@ Run the following command to install necessary packages:
 npm install
 ```
 
+### Install React Router DOM
+If you need routing in your app, install **React Router DOM** using:
+```bash
+npm install react-router-dom
+```
+
 ---
 
 ## Step 3: Start the Development Server
@@ -66,4 +71,19 @@ http://localhost:5173
 
 ---
 
+## Additional Commands
 
+- **Build the Project**:
+```bash
+npm run build
+```
+- **Preview the Production Build**:
+```bash
+npm run preview
+```
+- **Lint the Code** (if ESLint is installed):
+```bash
+npm run lint
+```
+
+---\
