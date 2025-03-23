@@ -70,20 +70,3 @@ http://localhost:5173
 ```
 
 ---
-
-## Additional Commands
-
-- **Build the Project**:
-```bash
-npm run build
-```
-- **Preview the Production Build**:
-```bash
-npm run preview
-```
-- **Lint the Code** (if ESLint is installed):
-```bash
-npm run lint
-```
-
----\
